@@ -1,48 +1,3 @@
-header {
-  border-bottom: 1px solid #e3e3e3;
-  margin-bottom: 2rem;
-  display: flex;
-
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-
-  background-color: var(--body-color);
-}
-
-nav {
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.logo {
-  font: 700 1.31rem 'Poppins', sans-serif;
-  color: var(--title-color);
-  -webkit-font-smoothing: auto;
-
-  span {
-    color: var(--base-color);
-  }
-}
-
-.section {
-  padding: 5rem 0;
-}
-
-.grid {
-  display: grid;
-  gap: 2rem
-}
-
-main {
-  margin-top: var(--header-height);
-}
-
 #home {
   overflow: hidden;
   
@@ -110,9 +65,4 @@ main {
   &:hover {
     background-color: var(--base-color-alt);
   }
-}
-
-.divider {
-  height: 1px;
-  background: linear-gradient(270deg, #916ab9 0%, rgba(204, 244, 230, 0.34) 100%);
 }

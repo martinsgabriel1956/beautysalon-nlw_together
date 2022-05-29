@@ -1,0 +1,134 @@
+#header {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 2rem;
+  display: flex;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  background-color: var(--body-color);
+  
+  transition: all .2s;
+
+  &.scroll {
+    box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+    background-color: var(--base-color);
+
+    
+    & .logo span,
+    & .icon-menu {
+      color: #fff;
+    }
+  }
+}
+
+nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  & .menu {
+    opacity: 0;
+    visibility: hidden;
+
+    top: -20rem;
+    transition:  .2s;
+
+    & ul {
+      display: none;
+    }
+  }
+
+  &.show .menu {
+    opacity: 1;
+    visibility: visible;
+
+    background: var(--body-color);
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    place-content: center;
+
+    & ul {
+      display: grid;
+    }
+  }
+
+  &.show ul.grid {
+    gap: 4rem;
+  }
+
+  & ul li {
+    text-align: center;
+  }
+
+  & ul li a {
+    transition: color .2s;
+    position: relative;
+  }
+
+  & ul li a:hover {
+    color: var(--base-color);
+  }
+  
+  & ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--base-color);
+
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+  }
+  
+  & ul li a:hover::after {
+    width: 100%;
+    transition: width .2s;
+  }
+
+  & .icon-close {
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+    
+    transition: .2s;
+  }
+  
+  &.show div.icon-close {
+    visibility:visible ;
+    opacity: 1;
+    top: 1.5rem;
+  }
+}
+
+.toggle {
+  color: var(--base-color);
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+.logo {
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+
+  span {
+    color: var(--base-color);
+  }
+}
+

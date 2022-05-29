@@ -1,40 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./public/styles/root.css">
-  <link rel="stylesheet" href="./public/styles/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>BeautySalon</title>
-</head>
-<body>
-  <header>
-    <nav class="container">
-      <a class="logo" href="#">beauty<span>salon</span>.</a>
-      <span class="menu">...</span>
-    </nav>
-  </header>
-  <main>
-    <section class="section" id="home">
-      <div class="container grid">
-        <div class="img-container">
-          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Fsb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Cabelereira secando o cabelo da cliente">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/styles/styles.css" />
+    <link rel="stylesheet" href="./public/assets/fonts/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>BeautySalon</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">beauty<span>salon</span>.</a>
+        <div class="menu">
+          <ul class="grid">
+            <li>
+              <a class="title" href="#home">Início</a>
+            </li>
+            <li>
+              <a class="title" href="#about">Sobre</a>
+            </li>
+            <li>
+              <a class="title" href="#services">Serviços</a>
+            </li>
+            <li>
+              <a class="title" href="#testimonials">Depoimentos</a>
+            </li>
+            <li>
+              <a class="title" href="#contact">Contatos</a>
+            </li>
+          </ul>
         </div>
-        <div class="text-container">
-          <h1>Saúde natural para os seus cabelos</h2>
-          <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
-          <a href="#" class="button">Agendar um horário</a>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+    <main>
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Fsb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="Cabelereira secando o cabelo da cliente"
+            />
+          </div>
+          <div class="text-container">
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
+            <p>
+              Um salão exclusivo em São Paulo, especializado em tratamentos
+              naturais.
+            </p>
+            <a href="#" class="button">Agendar um horário</a>
+          </div>
         </div>
-      </div>
-    </section>
-    <div class="divider"></div>
+      </section>
+      <div class="divider"></div>
 
-    <section class="section">
-      <h1>Próximo conteúdo</h1>
-    </section>
-  </main>
-</body>
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="3 cabelereiras">
+          </div>
+          <div class="text-container">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              deleniti quo culpa corporis et, eveniet eaque laudantium dicta?
+              Quia qui hic ab laborum odio sit dolores labore ullam molestiae
+              error.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              deleniti quo culpa corporis et, eveniet eaque laudantium dicta?
+              Quia qui hic ab laborum odio sit dolores labore ullam molestiae
+              error.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              deleniti quo culpa corporis et, eveniet eaque laudantium dicta?
+              Quia qui hic ab laborum odio sit dolores labore ullam molestiae
+              error.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-inverse"></div>
+
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
+          </header>
+         <div class="cards grid">
+          <div class="card">
+            <i class="icon-woman-hair"></i>
+            <h3 class="title">Terapia capilar</h3>
+            <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
+          </div>
+          <div class="card">
+            <i class="icon-trim"></i>
+            <h3 class="title">Cortes</h3>
+            <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
+          </div>
+          <div class="card">
+            <i class="icon-cosmetic"></i>
+            <h3 class="title">Tratamentos</h3>
+            <p>O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.</p>
+          </div>
+         </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./public/scripts/main.js"></script>
+  </body>
 </html>

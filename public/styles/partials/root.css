@@ -1,8 +1,6 @@
 :root {
   --header-height: 4.5rem;
-
   --hue: 270;
-  
   --title-color:hsl(var(--hue), 33%, 15%, 1);
   --base-color:hsl(var(--hue), 83%, 63%);
   --base-color-second:hsl(var(--hue), 22%, 83%);
@@ -16,7 +14,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -26,10 +25,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -41,7 +48,40 @@ img {
   height: auto;
 }
 
-.container { 
+.container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+
+.section {
+  padding: 5rem 0;
+}
+
+.section .title {
+  margin-bottom: 1rem;
+}
+
+.section header {
+  margin-bottom: 4rem;
+}
+
+.section header strong {
+  color: var(--base-color);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+.divider {
+  height: 1px;
+  background: -webkit-gradient(linear, right top, left top, from(#916ab9), to(rgba(205, 244, 230, 0.34)));
+  background: linear-gradient(270deg, #916ab9, rgba(205, 244, 230, 0.34));
+}
+
+main {
+  margin-top: calc(var(--header-height) + 2rem);
+}
+/*# sourceMappingURL=root.css.map */
