@@ -1,0 +1,127 @@
+header {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--body-color);
+}
+
+nav {
+  height: var(--header-height);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+main {
+  margin-top: var(--header-height);
+}
+
+#home {
+  overflow: hidden;
+}
+
+#home .container {
+  margin: 0;
+}
+
+#home .img-container {
+  position: relative;
+}
+
+#home .img-container::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -16.8%;
+  left: 16.7%;
+  z-index: 0;
+}
+
+#home .img-container img {
+  position: relative;
+  right: 2.93rem;
+}
+
+#home .text-container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#home .text-container h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text-container p {
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+#home .img-container img,
+#home .img-container::before {
+  border-radius: .25rem;
+}
+
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  padding: 0 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 500 1rem 'DM Sans', sans-serif;
+  height: 3.5rem;
+  border-radius: .25rem;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.button:hover {
+  background-color: var(--base-color-alt);
+}
+
+.divider {
+  height: 1px;
+  background: -webkit-gradient(linear, right top, left top, from(#916ab9), to(rgba(204, 244, 230, 0.34)));
+  background: linear-gradient(270deg, #916ab9 0%, rgba(204, 244, 230, 0.34) 100%);
+}
+/*# sourceMappingURL=main.css.map */
