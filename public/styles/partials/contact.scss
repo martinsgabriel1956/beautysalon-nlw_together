@@ -1,0 +1,28 @@
+#contact {
+  & .grid {
+    gap: 4rem;
+  }
+
+  & .text-container p {
+    margin-bottom: 2rem;
+  }
+
+  & .button i,
+  & ul li i {
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
+  }
+
+  & ul.grid {
+    gap: 2rem;
+  }
+
+  & ul li {
+    display: flex;
+    align-items: center;
+
+    & i{
+      color: var(--base-color);
+    }
+  }
+}

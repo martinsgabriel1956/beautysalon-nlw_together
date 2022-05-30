@@ -1,0 +1,31 @@
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text-container p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact ul li i {
+  color: var(--base-color);
+}
+/*# sourceMappingURL=contact.css.map */
