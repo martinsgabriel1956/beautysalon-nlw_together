@@ -14,12 +14,13 @@ for(const link of links) {
   });
 }
 
-const navHeight = header.offsetHeight
+export function changeHeaderColorWhenScroll() {
+  const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', () => {
   if(window.scrollY >= navHeight) {
     header.classList.add('scroll');
   } else {
     header.classList.remove('scroll');
   }
-})
+}
+

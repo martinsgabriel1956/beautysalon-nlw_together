@@ -3,4 +3,5 @@ export const elements = {
   toggle: document.querySelectorAll('nav .toggle'),
   links: document.querySelectorAll('nav ul li a'),
   header: document.querySelector('#header'),
+  backToTopButton: document.querySelector('.back-to-top'),
 }

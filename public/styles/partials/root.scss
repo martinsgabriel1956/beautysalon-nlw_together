@@ -11,6 +11,8 @@
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+
+   --title-font-size: 1.875rem;
 }
 
 * {
@@ -31,7 +33,7 @@ html {
 }
 
 .title {
-  font: 700 1.875rem 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -86,4 +88,18 @@ img {
 
 main {
   margin-top: calc(var(--header-height) + 2rem);
+}
+
+.logo {
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+
+  span {
+    color: var(--base-color);
+  }
+
+  &.logo-alt span {
+    color: var(--body-color);
+  }
 }

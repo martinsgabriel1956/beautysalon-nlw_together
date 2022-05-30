@@ -125,14 +125,4 @@ nav.show div.icon-close {
   font-size: 1.5rem;
   cursor: pointer;
 }
-
-.logo {
-  font: 700 1.31rem 'Poppins', sans-serif;
-  color: var(--title-color);
-  -webkit-font-smoothing: auto;
-}
-
-.logo span {
-  color: var(--base-color);
-}
 /*# sourceMappingURL=header.css.map */
