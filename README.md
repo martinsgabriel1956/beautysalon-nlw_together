@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <video src="./.github/banner.mp4" autoplay width="100%"></video>
+  <img src="./.github/banner.png" alt="banner" />
 </p>
 
 ## :computer: Projeto:
@@ -23,11 +23,11 @@
 
 ## :rocket: Tecnologias utilizadas:
 
-* HTML
-* SASS
-* Javascript
-* SwipperJS
-* ScrollReveal
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+* [SASS](https://sass-lang.com)
+* [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+* [SwipperJS](https://swiperjs.com)
+* [ScrollReveal](https://scrollrevealjs.org)
 
 # :memo: Licença
 
