@@ -1,6 +1,124 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    margin-top: var(--header-height);
+  }
+  #header.scroll nav ul li a:hover,
+  #header.scroll nav ul li a.active {
+    color: white;
+  }
+  #header.scroll nav ul li a::after,
+  #header.scroll nav ul li a.active::after {
+    background-color: white;
+  }
+  nav .icon-menu {
+    display: none;
+  }
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+  nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-template: 2rem;
+  }
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+  nav .menu ul li a.active:hover {
+    color: var(--base-color);
+  }
+  .section {
+    padding: 10rem 0;
+  }
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    height: 3.125rem;
+  }
+  .cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  #home .container {
+    grid-auto-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+  }
+  #home .img-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #home .text-container {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    max-width: 24rem;
+    text-align: left;
+    margin-left: 0;
+  }
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contact .container {
+    grid-auto-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact .text-container {
+    max-width: 25rem;
+  }
+  footer.section {
+    padding: 3.75rem 0;
+  }
+  footer .container {
+    grid-auto-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .logo {
+    font-size: 2.25rem;
+  }
+}
+
 @media (min-width: 992px) {
   :root {
-    --title-font-size: 2.2rem;
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

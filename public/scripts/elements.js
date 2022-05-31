@@ -4,4 +4,5 @@ export const elements = {
   links: document.querySelectorAll('nav ul li a'),
   header: document.querySelector('#header'),
   backToTopButton: document.querySelector('.back-to-top'),
+  sections: document.querySelectorAll('main section[id]')
 }

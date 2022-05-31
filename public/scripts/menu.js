@@ -1,6 +1,6 @@
 import { elements } from './elements.js';
 
-const { nav, toggle, links, header } = elements;
+const { nav, toggle, links, header, sections } = elements;
 
 for (const element of toggle) {
   element.addEventListener('click', () => {
@@ -14,9 +14,9 @@ for(const link of links) {
   });
 }
 
-export function changeHeaderColorWhenScroll() {
-  const navHeight = header.offsetHeight
+const navHeight = header.offsetHeight
 
+export function changeHeaderColorWhenScroll() {
   if(window.scrollY >= navHeight) {
     header.classList.add('scroll');
   } else {
@@ -24,3 +24,21 @@ export function changeHeaderColorWhenScroll() {
   }
 }
 
+export function activateNavlinkAtCurrentSession() {
+  const lineLimitCurrent = window.pageYOffset + (window.innerHeight / 8) * 4;
+
+  for(const section of sections) {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+
+    const lineLimitStart = lineLimitCurrent >= sectionTop;
+    const lineLimitEnd = lineLimitCurrent <= sectionTop + sectionHeight;
+
+    if(lineLimitStart && lineLimitEnd) {
+      document.querySelector(`nav ul li a[href*=${sectionId}]` ).classList.add('active');
+    } else {
+      document.querySelector(`nav ul li a[href*=${sectionId}]` ).classList.remove('active');
+    }
+  }
+}

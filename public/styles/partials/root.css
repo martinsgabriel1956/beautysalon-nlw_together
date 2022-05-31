@@ -10,6 +10,9 @@
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
   --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
 }
 
 * {
@@ -20,7 +23,7 @@
 }
 
 body {
-  font: 400 1rem 'DM Sans', sans-serif;
+  font: 400 1rem var(--body-font);
   background: var(--body-color);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
@@ -31,7 +34,7 @@ html {
 }
 
 .title {
-  font: 700 var(--title-font-size) "Poppins", sans-serif;
+  font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -55,7 +58,7 @@ img {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: calc(5rem + var(--header-height)) 0;
 }
 
 .section .title {
@@ -70,6 +73,10 @@ img {
   color: var(--base-color);
 }
 
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -82,12 +89,8 @@ img {
   background: linear-gradient(270deg, #916ab9, rgba(205, 244, 230, 0.34));
 }
 
-main {
-  margin-top: calc(var(--header-height) + 2rem);
-}
-
 .logo {
-  font: 700 1.31rem 'Poppins', sans-serif;
+  font: 700 1.31rem var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }

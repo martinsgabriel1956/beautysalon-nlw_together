@@ -16,7 +16,6 @@
   &.scroll {
     box-shadow: 0 0 12px rgba(0, 0, 0, .1);
     background-color: var(--base-color);
-
     
     & .logo span,
     & .icon-menu {
@@ -44,7 +43,7 @@ nav {
     }
   }
 
-  &.show .menu {
+  &.show .menu  {
     opacity: 1;
     visibility: visible;
 
@@ -77,8 +76,13 @@ nav {
     position: relative;
   }
 
-  & ul li a:hover {
+  & ul li a:hover,
+  & ul li a.active {
     color: var(--base-color);
+
+    &::after {
+      width: 100%;
+    }
   }
   
   & ul li a::after {
@@ -90,10 +94,7 @@ nav {
     position: absolute;
     left: 0;
     bottom: -1.5rem;
-  }
-  
-  & ul li a:hover::after {
-    width: 100%;
+    
     transition: width .2s;
   }
 

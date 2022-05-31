@@ -84,8 +84,14 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   color: var(--base-color);
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
 }
 
 nav ul li a::after {
@@ -96,10 +102,6 @@ nav ul li a::after {
   position: absolute;
   left: 0;
   bottom: -1.5rem;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
   -webkit-transition: width .2s;
   transition: width .2s;
 }

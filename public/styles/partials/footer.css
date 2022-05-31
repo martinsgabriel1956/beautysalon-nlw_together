@@ -2,6 +2,10 @@ footer {
   background: var(--base-color);
 }
 
+footer.section {
+  padding: 4rem 0;
+}
+
 footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -17,8 +21,14 @@ footer i {
   font-size: 1.5rem;
 }
 
+footer .social {
+  grid-auto-flow: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 footer .social a {
-  margin-right: 2rem;
   -webkit-transition: .3s;
   transition: .3s;
   display: inline-block;

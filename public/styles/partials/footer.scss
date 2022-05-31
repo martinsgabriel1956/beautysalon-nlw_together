@@ -1,6 +1,10 @@
 footer {
   background: var(--base-color);
 
+  &.section {
+    padding: 4rem 0;
+  }
+
   & .logo {
     display: inline-block;
     margin-bottom: 1.5rem;
@@ -16,10 +20,16 @@ footer {
     font-size: 1.5rem;
   }
 
+  & .social {
+    grid-auto-flow: column;
+    width: fit-content;
+  }
+
   & .social a {
-    margin-right: 2rem;
+    // margin-right: 2rem;
     transition: .3s;
     display: inline-block;
+    
 
     &:hover {
       transform: translateY(-15px);
