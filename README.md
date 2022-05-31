@@ -11,11 +11,8 @@
   <img src="./.github/banner.png" alt="banner" />
 </p>
 
-## :computer: Projeto:
-
-<br />
-
-<p align="center">
+<h2 align="center">:computer: Projeto:</h2>
+<p align="center">  
   <strong>Durante a semana, foi criado uma landing page para estúdio de beleza.</strong>
 </p>
 
